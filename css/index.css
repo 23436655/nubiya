@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+#head{
+    width: 100%;
+    height: 60px;
+    /* background:black */
+}
+#head .head-con{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    /* background: pink; */
+}
+#head .logo{
+    width: 20%;
+    height: 60px;
+    float: left;
+}
+#head .logo a{
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0;
+    background: url(../imanges/ia_400000034.png) no-repeat center;
+    background-size: 65%;
+}
+#head .list-content{
+    width: 60%;
+    text-align: center;
+    float: left;
+}
+#head .head-liList {
+    height: 60px;
+    margin-top: 0;
+}
+#head .head-liList li{
+    float: left;
+    margin: 0 25px;
+    font-size: 14px;
+    line-height: 60px;
+}
+#head .head-right{
+    width: 20%;
+    float: left;
+}
+.head-right ul{
+    height: 100%;
+}
+.head-right ul .denglu{
+    margin-left: 60px;
+    float: left
+}
+#head .head-right ul a{
+    display: inline-block;
+    line-height: 60px;
+}
+.head-right ul  a:hover{
+    color:pink
+}
+.head-right ul .gouwu{
+    margin-left: 30px;
+    float: left
+}
+.head-right ul .sousuo{
+    margin-left: 30px;
+    float: left
+}
+#banner{
+    width: 100%;
+}
+#banner .banner-con{
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#imgwrap li {
+    display: none;
+}
+#imgwrap li img{
+    width: 100%;
+    height: 100%;
+}
+#imgwrap .show {
+    display: block;
+}
+#imgwrap .guanggao{
+    position: absolute;
+    top: 0;
+    left: 17%;
+    text-align: center;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+#imgwrap .guanggao h1{
+    width: 250px;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+#imgwrap .guanggao h1 img{
+    width: 100%;
+    height: 100%;
+}
+#imgwrap .guanggao p:nth-of-type(1){
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+#imgwrap .guanggao p:nth-of-type(2){
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+#imgwrap .guanggao p:nth-of-type(3){
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+#imgwrap .guanggao p:nth-of-type(4){
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+#imgwrap .guanggao .white{
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+#imgwrap .guanggao .white:hover{
+    transition:all .7s ;
+    background: #fff;
+    color: #000;
+}
+#prev,
+#next {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    transition: all .5s;
+    opacity: .7;
+}
+
+#prev:hover,
+#next:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+#prev {
+    left: 15px;
+}
+
+#next {
+    right: 15px;
+}
+
+#dotWrap {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#dotWrap li {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    display: block
+}
+
+#dotWrap .dian{
+    background: blue;
+}
+#tuijian{
+    width: 100%;
+    
+    position: relative;
+}
+#tuijian .tuijian-con{
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#tuijian .tuijian-con a img{
+    width: 100%;
+}
+#tuijian .tuijian-right{
+    position: absolute;
+    left: 66%;
+    top: 35%;
+    float: left;
+    text-align: center;
+}
+#tuijian .tuijian-right h1{
+    margin-bottom: 15px;
+}
+#tuijian .tuijian-right p:nth-of-type(1){
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+#tuijian .tuijian-right p:nth-of-type(2){
+    font-size: 20px;
+    margin: 0 0 22px;
+}
+#tuijian .tuijian-right p:nth-of-type(3){
+    
+    margin: 0 0 22px;
+}
+#tuijian .tuijian-right .buy{
+    display: inline;
+    border: 1px solid #000;
+    border-radius: 20px; 
+    margin-bottom: 12px;
+    padding: 5px 10px ;
+}
+#tuijian .tuijian-right .buy:hover:hover{
+    transition:all .7s ;
+    background: #000;
+    color: #fff;
+}
+#tuijian .tuijian-right .more{
+    margin-top: 12px;
+}
+#xiaoshou{
+    width:100%;
+    overflow: hidden;
+    font-weight: 400;
+}
+.xiaoshou-con > div:nth-child(1) {
+    /* padding-right: 1px; */
+}
+.xiaoshou-con > div:nth-child(2) {
+    /* padding-right: 1px; */
+}
+.xiaoshou-con > div:nth-child(3) {
+    /* padding-right: 1px; */
+    /* padding-bottom: 15px; */
+} 
+.xiaoshou-con > div:nth-child(4) {
+    /* padding-right: 1px; */
+    /* padding-bottom: 15px; */
+}
+.xiaoshou-con > div{
+    height: 560px;
+}
+#xiaoshou .first{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+#xiaoshou .first a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+}
+#xiaoshou .first img{
+    width: 100%;
+}
+#xiaoshou .second{
+    width: 50%;
+    float: right;
+    overflow: hidden;
+}
+#xiaoshou .second img{
+    width: 100%;
+}
+#xiaoshou .third{
+    width: 50%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#xiaoshou .third img{
+    width: 100%;
+}
+#xiaoshou .third .third-wenzi{
+    float: left;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+}
+#xiaoshou .third .third-wenzi h3{
+    padding-bottom: 15px;
+}
+#xiaoshou .fouth{
+    width: 50%;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+#xiaoshou .fouth img{
+    width: 100%;
+}
+#xiaoshou .fouth .fouth-wenzi{
+    float: left;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+}
+#xiaoshou .fouth .fouth-wenzi h3{
+    padding-bottom: 15px;
+}
+#pintu{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1200px;
+    color: #333333;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+#pintu .pintu-con img{
+    width: 100%;
+}
+#pintu .wenzi{
+    position: absolute;
+    left: 66%;
+    top: 45%;
+    color: #fff;
+    text-align: center;
+}
+#news{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#news .news-con{
+    width: 100%;
+    /* box-sizing: border-box; */
+    font-weight: 400;
+    padding: 20px 25px;
+    margin: 0 auto;
+    color: #000;
+    background: #f0f0f0;
+}
+#news .first{
+    width: 33.33333333333333%;
+    float: left;
+}
+#news .first img{
+    width: 90%; 
+}
+#foot{
+    width: 100%;
+}
+#foot .foot-con{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+#foot .head{
+
+}
