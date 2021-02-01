@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+</head>
+<link rel="stylesheet" href="denglu.css">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <div id="head">
+        <div class="head-con">
+            <div class="left">
+                <h2>学生日常管理系统</h2>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div class="body-con">
+            <div class="picture">
+                <img src="images/ac799976981ba7048199bd3d1dd894ea.jpeg" alt="">
+            </div>
+            <div class="hezi">
+            <div class="zhuti">
+                <h2>用户登录</h2>
+                用户名:
+                <input type="text" id="username">
+                <br> 密码：
+                <input type="password" id="password">
+                <br>
+                <input type="checkbox" name="" id="">学生
+                <input type="checkbox" name="" id="">教师
+                <br>
+                <button type="submit" id="up" class="btn">登录</button>
+                <a href="new.html">
+                    <button type="submit" class="btn">去注册</button>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script>
+        $("#up").click(function () {
+            let zhanghu = $("#username").val();
+            let mima = $("#password").val();
+            //    console.log(`http:// 192.168.43.213:8080/login?username=${zhanghu}&password=${mima}`)
+            console.log(`username="${zhanghu}"&password="${mima}"`)
+            let http = new XMLHttpRequest()
+            http.open("get", `http://127.0.0.1:8080/login?username=${zhanghu}&password=${mima}`)
+            http.send()
+            http.onreadystatechange = function () {
+                if (http.readyState === 4) {
+                    console.log(http.responseText)
+
+                    if (http.responseText === "success") {
+                        alert("登录成功")
+                        location.href = "http://10.35.161.15/day28/oa.html";
+                    }
+                    if (http.responseText === "error") {
+                        alert("请检查用户名或密码是否正确")
+                    }
+                }
+            }
+        }) 
+    </script>
+</body>
+
+</html>
